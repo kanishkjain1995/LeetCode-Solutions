@@ -23,6 +23,7 @@ class Solution:
             memo[i] = sum_
         for i in range(l1-1,-1,-1):
             result += (10**(l1-1-i))*memo[int(a[i])]
+            
         if flag_a == flag_b:
             return str(result)
         else:
